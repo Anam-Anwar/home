@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+/* css variables */
+ :root{
+    --navbar-height:59px ;
+} body{
+    background-color: rgb(71, 134, 129);
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    /* font-style: italic; */
+    padding: 20px;
+}
+#logo img{
+    height: 60px;
+    margin: 5px 6px;
+}
+#logo{
+    margin: 7px 24px;
+} 
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* navigation bar : logo and image*/
+#navbar{
+    position: relative;
+}
+#navbar ul {
+    display: flex;
+}
+#navbar:before  {
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li{ 
+    list-style: none;
+   font-size: 1rem;
+
+}
+#navbar ul li a{
+   color: white;
+   display: inline-block;
+   padding: 3px 18px;
+   border-radius: 20px;
+   text-decoration: none;
+} 
+#navbar ul li a:hover{
+    color: white;
+    /* background-color:white; */
+    background: #c06B3E;
+}
+
+.hero-section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+.hero-section .content {
+    color: white;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.hero-section .content h1{
+    font-size: 3rem;
+    max-width: 600px;
+}
+.hero-section .content p{
+    font-weight: 300;
+    margin-top: 15px;
+    max-width: 600px;
+    color: black;
+}
+.hero-section .content button{
+    background: white;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 38px;
+    padding: 12px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.hero-section .content button:hover{
+    color: white;
+    /* color: black; */
+    background: #c06B3E;
+}
+@media sccreen and(max-width:900px){
+    #navbar ul #navbar ul li {
+        position: fixed;
+        left: 0;
+        top: 0;
+        flex-direction: column;
+        width: 260px;
+        height: 100vh;
+        background: white;
+        padding: 70px 40px 0;
+    }
+    #navbar ul li a{
+        color: black;
+
+     } 
+}
